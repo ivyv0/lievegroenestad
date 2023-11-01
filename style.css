@@ -228,6 +228,7 @@ h1 {
     font-size: 13pt;
     margin-bottom: 2em;
     font-family: 'playfair display';
+    text-align: center;
 
 }
 
@@ -262,8 +263,8 @@ h3 {
 }
 
 .button1 {
-    color: #F5F5F5;
-    background-color: #404218;
+    color: black;
+    background-color: white;
     padding: 20px;
     padding-left: 2em;
     padding-right: 2em;
@@ -271,7 +272,7 @@ h3 {
     border-radius: 30px;
     text-decoration: none;
     font-family: 'playfair display';
-    justify-content: center;
+    text-align: center;
 }
 
 .keywords {
