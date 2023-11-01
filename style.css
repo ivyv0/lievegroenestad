@@ -122,6 +122,23 @@ li {
     font-family: 'playfair display';
 }
 
+.blog { 
+    justify-content: center;
+    text-align: center;
+}
+.buttonblog {
+    color: #F5F5F5;
+    background-color: #404218;
+    padding: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 3px solid #404218;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'playfair display';
+    justify-content: center;
+}
+
 #check {
     display: none;
 }
@@ -274,3 +291,4 @@ h3 {
     font-family: 'playfair display';
     justify-content: center;
 }
+
