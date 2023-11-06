@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secondhand Splendor</title>
     <link href="style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+      </style> 
 </head>
-
 <body class="achtergrond">
-    <header>
+    <header class="header">
         <div class="logo"> 
-            <img src="img/logo3.png" alt="Logo">
+            <img src="img/logo.png" alt="Logo">
         </div>
         <input type="checkbox" id="check">
-        <label for="check" class="navlogo">
+        <label for="check" class="icons">
             <i class="navlogo"> <img src="img/navlogo.png" alt="Navigatiebar Hamburger"> </i>
-            <i class='bx bx-x' id="close-icons" style='color:#404218' ></i>
+            <i class="close-icons"> <img src="img/close-icons.png" alt="Close menu icon"> </i>
         </label>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="upcomingevents.html">events</a></li>
-                <li><a href="inspiratiegallerij.html">inspiratiegallerij</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><img src="img/homeicon.png" alt="home icon"><a href="index.html">Over ons</a></li>
+                <li><img src="img/eventsicon.png" alt="events icon"><a href="upcomingevents.html">Events</a></li>
+                <li><img src="img/inpsoicon.png" alt="inspiratiegallerij icon"><a href="inspiratiegallerij.html">Inspiratiegallerij</a></li>
+                <li><img src="img/contacticon.png" alt="contact icon"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -34,16 +36,29 @@
                 niet alleen een plek waar oude spullen worden verhandeld maar het is een viering van geschiedenis, hergebruik en 
                 milieubewustzijn.</p>
 
-                <a class="button" href=""> <strong>Lees meer</strong></a>
+                <a class="button" href="#blog"> <strong>Meer over ons</strong></a>
 
             <img src="img/homepage.jpeg" alt="collage foto van seconhand splendor kraampjes">
         </div>
     </main>
     <article class="blogcard">
+        
         <h2>Duurzaamheid van Secondhand Splendor</h2>
-        <div class="blog"> 
-        <p> "De vintage items die ik verkoop worden zorgvuldig geselecteerd uit verschillende bronnen. Ik haal kledingstukken op bij tweedehandswinkels,
-            kringloopwinkels, van vrienden die hun oude kleding willen recyclen, en uit mijn oude voorraad. Het is belangrijk voor mij om ervoor te 
+        <div id="blog"> 
+            <img src="img/kraampjepng.png" alt="foto van een kraampje bij de markt">
+           
+        <p> Deze markt heeft een focus op het hergebruik en minimaliseert de impact op het milieu op verschillende manieren. 
+            Verkopers worden aangemoedigd om verpakkingen te gebruiken die herbruikbaar zijn, en bezoekers worden aangemoedigd om hun
+             eigen herbruikbare tassen mee te nemen. Daarnaast zijn er recyclingstations beschikbaar voor plastic, blik en karton, en 
+             zijn er waterfonteinen waar bezoekers hun herbruikbare waterflessen kunnen bijvullen om zo het gebruik van plastic flessen te 
+             verminderen. Kortom, de Seconhand Splendor markt is niet alleen een plek waar je vintage/tweedehands items kunt vinden, maar 
+             ook een inspirerend voorbeeld van duurzaamheid en bewustzijn rondom het milieu. </p>
+
+          <p>"De vintage items die ik verkoop worden zorgvuldig geselecteerd uit verschillende bronnen. Ik haal kledingstukken op bij tweedehandswinkels,
+            kringloopwinkels, van vrienden die hun oude kleding willen recyclen, en uit mijn oude voorraad.</p>
+            <input type="checkbox" id="check1">
+            <div class="content">
+            <p>Het is belangrijk voor mij om ervoor te 
             zorgen dat deze items op een duurzame manier worden verkregen. Ik let op factoren zoals de herkomst van de kledingstukken, materialen 
             en arbeidsomstandigheden om ervoor te zorgen dat ze ethisch en verantwoord zijn geproduceerd. Omdat ik van kleding houd repareer ik ze 
             ook onverkochte items worden niet weggegooid, maar worden hergebruikt, gerepareerd of gerecycled. Als een kledingstuk niet verkocht wordt,
@@ -51,9 +66,13 @@
             producten zoals kussens of tassen. Daarnaast bied ik reparatiediensten aan voor de vintage items die ik verkoop. Dit draagt bij aan 
             duurzaamheid omdat het klanten aanmoedigt om hun kledingstukken te repareren in plaats van ze weg te gooien. Of het nu gaat om het 
             vervangen van een rits, herstellen van gaten of het innemen van kleding voor een betere pasvorm, ik sta klaar om kledingstukken nieuw 
-            leven in te geven."</p>
-           <img src="img/blogfoto.jpeg" alt="foto van een kraampje bij de markt">
-           <a class="buttonblog" href="upcomingevents.html"> <strong>Meer over events</strong></a>
+            leven in te geven." Jessica</p>
+            </div>
+           
         </div>
+        <label for="check1" class="buttonblog">Lees meer</label> 
     </article>
+    <footer>
+        <p>Copyright © 2023 Ivy Vo</p>
+    </footer>
 </body>
