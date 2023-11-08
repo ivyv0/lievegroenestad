@@ -8,19 +8,15 @@
 }
 
 .logo img {
-    width: 20em;
-   
+    width: 20em; 
 }
 
 .navlogo img { 
-    
     width: 5em;
     margin-right: 15px;
-    
 }
 
 .close-icons img {
-
     width: 5em;
     margin-right: 15px;
 }
@@ -94,17 +90,19 @@ li img {
     color:#124016; 
     font-size: 15pt;
     font-family: 'playfair display';
-    padding-top: 3em;
 }
 
 .square h1 {
     color: #404218;
-    padding-bottom: 1em;
+    padding-top: 8em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .square p {
     padding-bottom: 2em;
 }
+
 .square img {
     width:100%;
     padding-top:3em;
@@ -151,6 +149,7 @@ li img {
     flex-wrap:wrap-reverse;
     flex-direction: column;
     font-family: 'playfair display';
+    box-shadow:0 0 30px 5px rgba(0, 0, 0, 0.203);
 }
 #blog {
     display:flex;
@@ -188,7 +187,8 @@ li img {
     display: none;
 }
 
-@media only screen and (max-width:990px) { 
+@media only screen and (max-width:1080px) { 
+    
     .logo img {
         width: 17em;
        
@@ -205,6 +205,10 @@ li img {
     #check:checked ~ .navbar { 
         height: 100em;
     }
+
+    .navlogo {
+        display: block; 
+        }
 
 
     ul {
@@ -297,9 +301,11 @@ h1 {
     color: #404218;
     margin-bottom: 2em;
     text-align: center;
-    padding-top: 8em;
-
+    padding-top: 5em;
+    font-size: 20pt;
+    text-transform: uppercase;
 }
+
 .card {
     color:#a1a18a;
     padding: 2em;
@@ -316,9 +322,23 @@ h1 {
 
 .card p {
     color:black;
-    
 }
 
+.buttonevents {
+    text-align: center;
+    padding:2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonmeerinfo {
+    color: black;
+    background-color: transparent;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: 'playfair display';
+    text-align: center;
+}
 
 .eventsfoto img {
     width: 100%;
@@ -337,8 +357,9 @@ h3 {
     margin-top:5em;
     font-family: 'playfair display';
     padding-top: 3em;
-
+    text-transform: uppercase;
 }
+
 
 .locatie img{ 
     width: 100%;
@@ -376,42 +397,94 @@ iframe {
     font-weight: bold;
 }
 
-.buttonmeerinfo {
-    color: black;
-    background-color: transparent;
-    padding-left: 2em;
-    padding-right: 2em;
-    font-family: 'playfair display';
-    text-align: center;
-}
 .button1:hover { 
     background-color: transparent;
     border: 3px solid #a1a18a;
 
 }
 
-.buttonevents {
+/* Inspiratiegallerij */
+
+.button2 {
+    color: rgba(0, 0, 0, 0.538);
+    background-color:#a1a18aa2 ;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 0.5em;
+    border: 2px solid transparent;
+    text-decoration: underline;
+    font-family: 'roboto mono';
     text-align: center;
-    padding:2em;
-    display: flex;
-    justify-content: space-evenly;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.keywords {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding-bottom: 5em;
 }
 
-.keywords {
- display:flex;
- flex-wrap:wrap;
- justify-content: space-around;
- padding-bottom: 5em;
+.keywords img {
+    width: 100%;
+
 }
+
+.search {
+    width: 100%;
+    display: flex;
+    padding:10px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #a1a18a;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    color: grey;
+  }
+  
 
 /* Contact */
 
-#contact-form h2 {
+.info {
+    color: #124016; 
+    font-size: 12pt;
+    font-family: 'playfair display';
+    margin: 2em;
+    justify-content: center;
+    text-align: center;
+}
+
+.info h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3em;
+    padding-top: 3em;
+    font-size: 25pt;
+    font-family: 'playfair display';
+    text-transform: uppercase;
+}
+
+.info p {
+    border: 1px solid transparent;
+    background-color:#12401624; 
+    padding:2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
+}
+
+.info img {
+    width: 20%;
+    
+}
+
+.contact-form h2 {
     color: #A8A88D;
 }
-#contact-form, #contact-info {
-    width: 90%;
-    max-width: 600px;
+
+.contact-form, .contact-info {
+    width: 100%;
     margin: 20px auto;
     background-color:#124016;
     padding: 20px;
@@ -419,7 +492,7 @@ iframe {
     font-family: 'playfair display';
     color: #A8A88D;
     font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
 }
 
 form label {
@@ -449,7 +522,7 @@ form input[type="submit"] {
     font-weight: bold;
 }
 
-#contact-info p {
+.contact-info p {
     margin: 10px 0;
 }
 
