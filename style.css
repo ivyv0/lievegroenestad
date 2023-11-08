@@ -5,10 +5,23 @@
 
 .achtergrond {
     background-color: #FCFDF2;
-}
+}    
+
+/* Navigatie menu*/
 
 .logo img {
     width: 20em; 
+}
+
+.navlogo {
+    display:none;
+    position: absolute;
+    right:0; 
+    cursor: pointer;
+}
+
+#check {
+    display: none;
 }
 
 .navlogo img { 
@@ -23,12 +36,6 @@
 
 .close-icons {
     display: none;
-}
-
-.navlogo {
-    display:none;
-    position: absolute;
-    right:0; 
 }
 
 
@@ -50,8 +57,8 @@ ul {
     margin: auto;
     padding: 35px 0;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content:right;
+    align-items:start;
     flex-direction: row;
     flex-wrap:wrap;
     font-family: "roboto mono";
@@ -83,7 +90,7 @@ li img {
     padding:5pt;  
 }
 
-
+/* Home pagina */
 .square {
     text-align: center;
     justify-content: center;
@@ -129,17 +136,10 @@ li img {
     color:black; 
 }
 
-#blog img {
-    width:70vw;
-    border-radius: 3em;
-    margin:1em;
-    flex-wrap:wrap;
-    display:flex;
-}
-
 .blogcard h2 {
     padding-bottom:auto;
 }
+
 .blogcard {
     background-color: #124427;
     color:#A8A88D; 
@@ -151,10 +151,20 @@ li img {
     font-family: 'playfair display';
     box-shadow:0 0 30px 5px rgba(0, 0, 0, 0.203);
 }
+
+#blog img {
+    width:70vw;
+    border-radius: 3em;
+    margin:1em;
+    flex-wrap:wrap;
+    display:flex;
+}
+
 #blog {
     display:flex;
     flex-wrap: wrap;
 }
+
 .buttonblog {
     color: #F5F5F5;
     background-color: #404218;
@@ -170,6 +180,7 @@ li img {
     margin-top: 15px;
     font-weight: bold;
 }
+
 .content {
     display: none;
     transition: 0.5s linear;
@@ -183,15 +194,13 @@ li img {
     display: none;
 }
 
-#check {
-    display: none;
-}
+/* Mobile  en ipad screen*/
 
 @media only screen and (max-width:1080px) { 
     
     .logo img {
-        width: 17em;
-       
+        width: 17em;  
+
     }
     .navbar {
         position: absolute;
@@ -201,27 +210,32 @@ li img {
         flex-direction: column;
         height:0; 
         overflow: hidden;
+
     } 
+
     #check:checked ~ .navbar { 
         height: 100em;
+
     }
 
     .navlogo {
         display: block; 
-        }
 
+    }
 
     ul {
         background-color: #A8A88D;
         font-size: 13pt;
         padding: 2em;
         flex-direction: column;
+
     }
 
     li a {
         display: block;
         margin:2em;
         border-bottom: 1px solid #404218;
+
     }
     li img {
         width: 5em;
@@ -230,81 +244,101 @@ li img {
     }
     
 }
-    @media only screen and (max-width:500px) {
-        .icons {
-            display: inline-flex;
-        }
+@media only screen and (max-width:500px) {
+    .icons {
+        display: inline-flex;
 
-        .logo img {
-            width: 15em;
-        }
+    }
 
-        .navbar {
-            position: absolute;
-            left:0;
-            width: 100%;
-            top:10vh;
-            flex-direction: column;
-            height:0; 
-            overflow: hidden;
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
-        } 
-        li a {
-            display: block;
-            margin:2em;
-            border-bottom: 1px solid #404218;
+    .logo img {
+        width: 15em;
+
+    }
+
+    .navbar {
+        position: absolute;
+        left:0;
+        width: 100%;
+        top:10vh;
+        flex-direction: column;
+        height:0; 
+        overflow: hidden;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+
+    } 
+
+    li a {
+        display: block;
+        margin:2em;
+        border-bottom: 1px solid #404218;
            
-        }
+    }
 
-        .navlogo {
+    .navlogo {
         display: block; 
-        }
 
-        .close-icons {
-            display: none;
-        }
+    }
 
-        #check:checked ~.icons .navlogo {
-            display: none;
-    
-        }
+    .close-icons {
+        display: none;
 
-        #check:checked ~.icons .close-icons {
-            display: block;
-            padding-left: 2em;
-        }
+    }
+
+    #check:checked ~.icons .navlogo {
+        display: none;
+
+    }
+
+    #check:checked ~.icons .close-icons {
+        display: block;
+        padding-left: 2em;
+
+    }
 
     ul {
         background-color: #A8A88D;
-        font-size: 13pt;
-        padding: 2em;
+        font-size: 10pt;
         flex-direction: column;
         margin-top:1em; 
+
     }
 
     li a:hover {
         border-bottom:2px solid #A6CF8E; 
+
     }
+
     .square h1 {
         color: #404218;
         padding-bottom: 2em;
         font-size: 20pt;
+
     }
+
+    h1 {
+         padding-bottom: 2em;
+        
+    }
+
     li img {
-        width: 5em;
-        margin:auto;
-        padding:auto; 
+         width: 5em;
+         margin:auto;
+         padding:auto; 
+         left: 5em;
     }
 }
 
 h1 {
     color: #404218;
-    margin-bottom: 2em;
+    padding-bottom: 4em;
+    padding-top: 10em;
     text-align: center;
-    padding-top: 5em;
     font-size: 20pt;
     text-transform: uppercase;
+    font-weight: bold;
 }
+
+/* Events*/
 
 .card {
     color:#a1a18a;
@@ -322,6 +356,7 @@ h1 {
 
 .card p {
     color:black;
+
 }
 
 .buttonevents {
@@ -329,6 +364,7 @@ h1 {
     padding:2em;
     display: flex;
     justify-content: space-evenly;
+
 }
 
 .buttonmeerinfo {
@@ -338,17 +374,22 @@ h1 {
     padding-right: 2em;
     font-family: 'playfair display';
     text-align: center;
+
 }
 
 .eventsfoto img {
     width: 100%;
     border-radius: .5rem;
+
 }
+
 .separator {
     height: 6px;
     background-color: #404218;
     margin-bottom: 16px;
+
 }
+
 h3 {
     color: #A8A88D;
     font-size: 17pt;
@@ -358,6 +399,7 @@ h3 {
     font-family: 'playfair display';
     padding-top: 3em;
     text-transform: uppercase;
+
 }
 
 
@@ -461,16 +503,6 @@ iframe {
     text-align: center;
 }
 
-.info h1 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 3em;
-    padding-top: 3em;
-    font-size: 25pt;
-    font-family: 'playfair display';
-    text-transform: uppercase;
-}
-
 .info p {
     border: 1px solid transparent;
     background-color:#12401624; 
@@ -483,11 +515,12 @@ iframe {
     
 }
 
-.contact-form h2 {
+.contact h2 {
     color: #A8A88D;
+    font-weight: bold;
 }
 
-.contact-form, .contact-info {
+.contact, .contact-info {
     width: 100%;
     margin: 20px auto;
     background-color:#124016;
