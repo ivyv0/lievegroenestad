@@ -137,9 +137,6 @@ li img {
     color:black; 
 }
 
-.blogcard h2 {
-    padding-bottom:auto;
-}
 
 .blogcard {
     background-color: #124427;
@@ -241,7 +238,6 @@ li img {
     li img {
         width: 5em;
         margin:auto;
-        padding:auto; 
     }
     h1 {
         color: #404218;
@@ -331,7 +327,6 @@ li img {
     li img {
          width: 5em;
          margin:auto;
-         padding:auto; 
          left: 5em;
     }
 }
