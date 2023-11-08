@@ -444,6 +444,10 @@ iframe {
     border-radius: 5px 0 0 5px;
     color: grey;
   }
+
+  .inspoicon img {
+    width: 23%;
+  }
   
 
 /* Contact */
