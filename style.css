@@ -143,7 +143,7 @@ li img {
     color:#A8A88D; 
     border-radius: 4em;
     padding: 2em;
-    font-size: 13pt;
+    font-size: 15pt;
     flex-wrap:wrap-reverse;
     flex-direction: column;
     font-family: 'playfair display';
@@ -521,7 +521,7 @@ iframe {
     font-weight: bold;
 }
 
-.contact, .contact-info {
+.contact {
     width: 100%;
     margin: 20px auto;
     background-color:#124016;
@@ -560,8 +560,18 @@ form input[type="submit"] {
     font-weight: bold;
 }
 
-.contact-info p {
-    margin: 10px 0;
+.contact-info {
+    text-align: left;
+    width: 100%;
+    color: #a1a18a;
+    margin: 20px auto;
+    background-color:#124016;
+    padding: 20px;
+    font-family: 'playfair display';
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
+   
+
 }
 
 
