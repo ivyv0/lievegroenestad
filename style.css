@@ -346,7 +346,7 @@ main {
 }
 
 h3 {
-    color: #A8A88D;
+    color: #ffffff;
     font-size: 17pt;
     text-align: center;
     justify-content: center;
@@ -370,10 +370,10 @@ h3 {
 
 .locatie {
     background-color: #B19470;
-    color: #A8A88D; 
+    color: #ffffff; 
     font-size: 15pt;
     margin-top: 2em;
-    font-family: 'playfair display';
+    font-family: 'sora';
 
 }
 
@@ -470,7 +470,7 @@ iframe {
 }
 
 .contact h2 {
-    color: #A8A88D;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -480,8 +480,8 @@ iframe {
     background-color:#B19470;
     padding: 20px;
     border-radius: 5px;
-    font-family: 'playfair display';
-    color: #A8A88D;
+    font-family: 'sora';
+    color: #ffffff;
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
 }
@@ -513,13 +513,24 @@ form input[type="submit"] {
     font-weight: bold;
 }
 
+.contact-info h4 {
+ text-align: left;
+ color: #ffffff;
+ background-color:#000000;
+ font-family: 'open sans';
+ font-weight: bold;
+ font-size: 1.5em;;
+
+}
+
+
 .contact-info { 
     width: 100%;
     color: #ffffff;
     margin: 20px auto;
-    background-color:#B19470;
+    background-color:#000000;
     padding: 20px;
-    font-family: 'sora';
+    font-family: 'open sans';
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
    
