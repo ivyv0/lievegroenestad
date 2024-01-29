@@ -99,7 +99,6 @@ li {
 }
 
 
-
 /* Home pagina */
 
 .square {
@@ -134,6 +133,7 @@ h2 {
     font-family: 'sora';
     text-align: center;
 }
+
 .square p {
     padding-bottom: 2em;
 }
@@ -257,7 +257,6 @@ main {
     width: 100%;
 }
 
-
 #check1:checked  ~ .content {
     display: block;
 }
@@ -268,37 +267,6 @@ main {
 
 /* Mobile  en ipad screen*/
 
-@media only screen and (max-width:1080px) { 
-    
-    .logo img {
-        width: 11em;  
-
-    }
-    .square img {
-        width:100%;
-        padding-top:3em;
-        padding-bottom: 5em;
-        padding-left:0.5em;
-        padding-right:0.5em;
-    }
-      
-}
-
-@media only screen and (max-width:500px) {
-    
-
-    .icons {
-        display: inline-flex;
-
-    }
-
-    .logo img {
-        width: 11em;
-
-    }
-
-   
-}
 
 /* Events*/
 
@@ -328,8 +296,8 @@ main {
 }
 
 .buttonevents img{
- width: 15vw;
- height: 15vw;
+     width: 20vw;
+     height: 20vw;
 }
 
 
@@ -354,7 +322,6 @@ h3 {
     font-family: 'sora';
     padding-top: 3em;
     text-transform: uppercase;
-
 }
 
 
@@ -399,7 +366,11 @@ iframe {
 
 }
 
-/* Inspiratiegallerij */
+.button3 {
+    background-color: transparent;
+}
+
+/* Inspiratiegallerij en blog */
 
 .button2 {
     color: rgba(0, 0, 0, 0.538);
@@ -503,7 +474,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background-color: #009688;
+    background-color: #B19470;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -523,7 +494,6 @@ form input[type="submit"] {
 
 }
 
-
 .contact-info { 
     width: 100%;
     color: #ffffff;
@@ -533,8 +503,6 @@ form input[type="submit"] {
     font-family: 'open sans';
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
-   
-
 }
 
 
