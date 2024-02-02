@@ -3,11 +3,11 @@
     box-sizing: border-box; 
 }
 
-.achtergrond {
-    background-color: #fbfbfb;
-}    
-
 /* Navigatie menu*/
+
+body {
+    background-color: white;
+}
 
 header {
     position: fixed;
@@ -22,7 +22,7 @@ header {
 }
 
 .logo img {
-    width: 11em; 
+    width: 10em; 
     padding-top: 2em;
 }
 
@@ -39,7 +39,7 @@ header {
 }
 
 .icons .close-icons {
- display: none;
+    display: none;
 }
 
 #check:checked~.icons .close-icons {
@@ -93,9 +93,7 @@ li a:hover {
 
 li {
     list-style: none;
-    display: flex;
     margin-bottom: 2em;
-
 }
 
 
@@ -105,8 +103,7 @@ li {
     text-align: center;
     justify-content: center;
     color:black;
-    font-family: 'sora';
-   
+    font-family: 'sora'; 
 }
 
 .fotohome {
@@ -114,11 +111,11 @@ li {
     padding: 2em;
 }
 
- h1 {
+h1 {
     color: black;
     padding-top: 2em;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 16pt;
     padding: 2em 0.5em 1.2em 0.5em;
     font-family: 'sora';
     text-align: center;
@@ -128,10 +125,9 @@ h2 {
     color: black;
     padding-top: 2em;
     text-transform: uppercase;
-    font-size: 1em;
-    padding: 2em 0.5em 1.2em 0.5em;
+    font-size: 16pt;
     font-family: 'sora';
-    text-align: center;
+    text-align: left;
 }
 
 .square p {
@@ -140,10 +136,7 @@ h2 {
 
 .square img {
     width:100%;
-    padding-top:3em;
-    padding-bottom: 5em;
-    padding-left:2em;
-    padding-right:2em;
+    padding: 3em 1em 2em 1em;
 }
 
 .button {
@@ -185,18 +178,17 @@ h2 {
     height: 4em;
   
 }
+
 main {
     padding-top: 10em;
 }
 
 .blogcard {
-    background-color: #B19470;
-    color:white; 
+    color:rgb(0, 0, 0); 
     padding: 2em;
     margin-top: 2em;
-    font-size: 10pt;
+    font-size: 11pt;
     font-family: 'sora';
-    box-shadow:0 0 30px 5px rgba(0, 0, 0, 0.203);
 }
 
 #blog img {
@@ -236,14 +228,12 @@ main {
     color:black; 
     padding: 2em;
     margin-top: 2em;
-    font-size: 10pt;
+    font-size: 11pt;
     font-family: 'sora';
-    box-shadow:0 0 30px 5px rgba(0, 0, 0, 0.203);
     flex-wrap: wrap;
-
 }
 
-.blog2 h1 {
+.blogcard h1 {
     color: black;
     padding-top: 2em;
     text-transform: uppercase;
@@ -253,8 +243,9 @@ main {
     text-align: center;
 }
 
-.blog2 img {
+.blogcard1 img {
     width: 100%;
+    padding-left: 1em;
 }
 
 #check1:checked  ~ .content {
@@ -265,39 +256,47 @@ main {
     display: none;
 }
 
-/* Mobile  en ipad screen*/
-
 
 /* Events*/
 
 .card {
-    padding: 2em;
-    margin-bottom: 2em;
     font-family: 'sora';
-    background-color: whitesmoke;
-    border-radius: 2em;
-    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     text-transform: uppercase;
+   
+}
+
+.card h3 {
+    color: grey;
+    padding: 2em 0.5em 1.2em 0.5em;
+    font-size: 15pt;
+
+}
+.datum {
+    font-family: 'sora';
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    padding: 1.5em;
 
 }
 
 .card p {
     color:black;
+    font-size: 13px;
+    margin-top: 2em;
 
 }
 
 .buttonevents {
     text-align: center;
-    padding:2em;
-    display: flex;
-    justify-content: space-evenly;
+    padding: 3em;
 
 }
 
 .buttonevents img{
-     width: 20vw;
-     height: 20vw;
+     width: 3em;
+     height: 3em;
 }
 
 
@@ -313,17 +312,11 @@ main {
     width: 10em;
 }
 
-h3 {
-    color: #ffffff;
-    font-size: 17pt;
-    text-align: center;
-    justify-content: center;
-    margin-top:5em;
-    font-family: 'sora';
-    padding-top: 3em;
-    text-transform: uppercase;
+.separator1 {
+    height: 3px;
+    background-color: rgb(112, 111, 111);
+    width: 100%;
 }
-
 
 .locatie img{ 
     width: 100%;
@@ -333,6 +326,11 @@ h3 {
     margin: 2em;
     font-size: 15pt;
 
+}
+
+.locatie h4 {
+    text-align: center;
+    padding-top: 2em;
 }
 
 .locatie {
@@ -372,19 +370,6 @@ iframe {
 
 /* Inspiratiegallerij en blog */
 
-.button2 {
-    color: rgba(0, 0, 0, 0.538);
-    background-color:#a1a18aa2 ;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-bottom: 0.5em;
-    border: 2px solid transparent;
-    text-decoration: underline;
-    font-family: 'roboto mono';
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 .keywords {
     display:flex;
     flex-wrap:wrap;
@@ -431,12 +416,13 @@ iframe {
 .info p {
     border: 1px solid transparent;
     background-color:#e9e9e1; 
-    padding:2em;
+    padding: 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
 }
 
 .info img {
     width: 20%;
+    padding-top: 2em;
     
 }
 
@@ -474,7 +460,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background-color: #B19470;
+    background-color: #683D14;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -485,25 +471,30 @@ form input[type="submit"] {
 }
 
 .contact-info h4 {
- text-align: left;
- color: #ffffff;
- background-color:#000000;
- font-family: 'open sans';
- font-weight: bold;
- font-size: 1.5em;;
+    text-align: center;
+    color: #000000;
+    font-family: 'open sans';
+    font-weight: bold;
+    font-size: 1.5em;;
+    padding: 1.5em;
 
 }
 
 .contact-info { 
     width: 100%;
-    color: #ffffff;
-    margin: 20px auto;
-    background-color:#000000;
-    padding: 20px;
+    color: #000000;
     font-family: 'open sans';
     font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
+    padding-top: 4em;
 }
 
-
+.contact-info img{
+    width: 100%;
+    position: absolute;
+    padding-right: 1rem;
+}
+.contact-info p, li {
+    position: relative;
+    text-align: center;
+}
 
